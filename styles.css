@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
+
+:root {
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: rgb(0, 157, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  margin: 0;
+  justify-content: center;
+  max-width: 1200px;
+  margin-top: 85px;
+}
+
+.team {
+  margin-top: 20px;
+}
+
+.info {
+  margin: 15px 0 7px;
+  letter-spacing: 1px;
+  justify-content: center;
+  text-align: left;
+}
+
+#result .team-img {
+  background-color: lightskyblue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#result {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  max-width: 220px;
+}
+
+.number {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.search-info {
+  top: 110px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.search-box {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  width: 60px;
+  height: 60px;
+  background: none;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-sizing: border-box;
+  outline: none;
+  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  transition-delay: 0.4s;
+  color: white;
+  font-size: 20px;
+ 
+}
+
+.inclicked {
+  width: 360px;
+  border-radius: 0;
+  padding: 0 15px;
+  padding-right: 40px;
+}
+
+.btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  width: 4px;
+  height: 25px;
+  background: #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+  bottom: -16px;
+  right: -6px;
+  transition: 0.3s;
+}
+
+.close::before,
+.close::after {
+  content: "";
+  width: 4px;
+  height: 34px;
+  background: #fff;
+  position: absolute;
+  bottom: 12px;
+  right: 28px;
+}
+
+.close::before {
+  transform: rotate(-45deg);
+}
+
+.close::after {
+  transform: rotate(45deg);
+}
